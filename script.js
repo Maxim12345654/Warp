@@ -9,7 +9,9 @@ image.addEventListener("load", function () {
     const effect = new Effect(canvas,ctx,image);
     effect.init();
     function animate(){
-    ///canvas.clearRect(0,0,canvas.width,canvas.height);
+    ////ctx.clearRect(0,0,canvas.width,canvas.height);
+    effect.draw();
+    effect.update();
     requestAnimationFrame(animate);
     }
     animate();
